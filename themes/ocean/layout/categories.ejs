@@ -1,0 +1,26 @@
+<section class="outer">
+  <% if (site.categories.length){ %>
+  <h1 class="page-type-title"><%= __('categories') %></h1>
+  <%- list_categories({show_count: theme.show_count}) %>
+  <% } %>
+</section>
+
+<!-- <section class="outer">
+  <% if (site.categories.length) { %>
+  <h1 class="page-type-title"><%= __('categories') %></h1>
+  <ul class="category-list">
+    <% site.categories.forEach(function(category) { %>
+    <li>
+      <a href="<%- url_for(category.path) %>">
+        <%= category.name %>
+        <% if (theme.show_count) { %>
+        (<%= category.length %>)
+        <% } %>
+      </a>
+    </li>
+    <% }); %>
+  </ul>
+  <% } else { %>
+  <p><%= __('no_categories') %></p>
+  <% } %>
+</section> -->
